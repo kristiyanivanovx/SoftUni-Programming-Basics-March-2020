@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml.Serialization;
+
+namespace ProductShop.Dtos.Import
+{
+	[XmlType("User")]
+	public class UserInputModel
+	{
+		[XmlElement("firstName")]
+		public string FirstName { get; set; }
+
+		[XmlElement("lastName")]
+		public string LastName { get; set; }
+
+		[XmlElement("age")]
+		public int Age { get; set; }
+	}
+
+	//[XmlRoot("Users")]
+	//public class Users
+	//{
+	//	[XmlElement("User")]
+	//	public List<User> User { get; set; }
+	//}
+}

@@ -1,4 +1,0 @@
-C:\Users\Az\source\repos\SoftUniWorksWeek7\SoftUniWorksWeek7\obj\Debug\netcoreapp3.1\SoftUniWorksWeek7.csprojAssemblyReference.cache
-C:\Users\Az\source\repos\SoftUniWorksWeek7\SoftUniWorksWeek7\obj\Debug\netcoreapp3.1\SoftUniWorksWeek7.csproj.CoreCompileInputs.cache
-C:\Users\Az\source\repos\SoftUniWorksWeek7\SoftUniWorksWeek7\obj\Debug\netcoreapp3.1\SoftUniWorksWeek7.AssemblyInfoInputs.cache
-C:\Users\Az\source\repos\SoftUniWorksWeek7\SoftUniWorksWeek7\obj\Debug\netcoreapp3.1\SoftUniWorksWeek7.AssemblyInfo.cs
