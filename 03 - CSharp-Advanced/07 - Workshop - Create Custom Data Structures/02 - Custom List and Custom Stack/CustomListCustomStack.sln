@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomListCustomStack", "CustomListCustomStack\CustomListCustomStack.csproj", "{C8467CA1-348E-4448-86DE-EF7DE2B6960F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListyIterator", "ListyIterator\ListyIterator.csproj", "{712F3F54-CADA-4E69-A16A-28E6BDC312F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericEnumerableLinkedList", "GenericEnumerableLinkedList\GenericEnumerableLinkedList.csproj", "{B29B7230-7120-4604-9B79-88F9B5BB6613}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stack", "Stack\Stack.csproj", "{DCD3013A-D7A4-4B8F-BA59-481C441E95FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Froggy", "Froggy\Froggy.csproj", "{50EBF8AC-724F-4E89-8652-A15C4A6913E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComparingObjects", "ComparingObjects\ComparingObjects.csproj", "{56CB0649-1F46-4FF1-9A78-EAEC12EAB869}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EqualityLogic", "EqualityLogic\EqualityLogic.csproj", "{21AC95C8-2699-4EA9-BF32-AA4164AC8CB3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C8467CA1-348E-4448-86DE-EF7DE2B6960F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8467CA1-348E-4448-86DE-EF7DE2B6960F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8467CA1-348E-4448-86DE-EF7DE2B6960F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8467CA1-348E-4448-86DE-EF7DE2B6960F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{712F3F54-CADA-4E69-A16A-28E6BDC312F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{712F3F54-CADA-4E69-A16A-28E6BDC312F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{712F3F54-CADA-4E69-A16A-28E6BDC312F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{712F3F54-CADA-4E69-A16A-28E6BDC312F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B29B7230-7120-4604-9B79-88F9B5BB6613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B29B7230-7120-4604-9B79-88F9B5BB6613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B29B7230-7120-4604-9B79-88F9B5BB6613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B29B7230-7120-4604-9B79-88F9B5BB6613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCD3013A-D7A4-4B8F-BA59-481C441E95FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCD3013A-D7A4-4B8F-BA59-481C441E95FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCD3013A-D7A4-4B8F-BA59-481C441E95FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCD3013A-D7A4-4B8F-BA59-481C441E95FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50EBF8AC-724F-4E89-8652-A15C4A6913E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50EBF8AC-724F-4E89-8652-A15C4A6913E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50EBF8AC-724F-4E89-8652-A15C4A6913E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50EBF8AC-724F-4E89-8652-A15C4A6913E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56CB0649-1F46-4FF1-9A78-EAEC12EAB869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56CB0649-1F46-4FF1-9A78-EAEC12EAB869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56CB0649-1F46-4FF1-9A78-EAEC12EAB869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56CB0649-1F46-4FF1-9A78-EAEC12EAB869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21AC95C8-2699-4EA9-BF32-AA4164AC8CB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21AC95C8-2699-4EA9-BF32-AA4164AC8CB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21AC95C8-2699-4EA9-BF32-AA4164AC8CB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21AC95C8-2699-4EA9-BF32-AA4164AC8CB3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {45E2B055-84A4-4AE7-AC31-6A4FEFA14A43}
+	EndGlobalSection
+EndGlobal
