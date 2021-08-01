@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Students", "Students\Studen
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TeamworkProjects", "TeamworkProjects\TeamworkProjects.csproj", "{E04ECBB0-076C-4BD7-A4EF-18AD8FA1DE74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VehicleCatalohue", "VehicleCatalohue\VehicleCatalohue.csproj", "{281F2768-5C00-42C9-88C6-B19934D4E33A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VehicleCatalohue", "VehicleCatalohue\VehicleCatalohue.csproj", "{281F2768-5C00-42C9-88C6-B19934D4E33A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderByAge", "OrderByAge\OrderByAge.csproj", "{905C7771-B805-47B6-A6CB-07B5AC04714D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{281F2768-5C00-42C9-88C6-B19934D4E33A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{281F2768-5C00-42C9-88C6-B19934D4E33A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{281F2768-5C00-42C9-88C6-B19934D4E33A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{905C7771-B805-47B6-A6CB-07B5AC04714D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{905C7771-B805-47B6-A6CB-07B5AC04714D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{905C7771-B805-47B6-A6CB-07B5AC04714D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{905C7771-B805-47B6-A6CB-07B5AC04714D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
