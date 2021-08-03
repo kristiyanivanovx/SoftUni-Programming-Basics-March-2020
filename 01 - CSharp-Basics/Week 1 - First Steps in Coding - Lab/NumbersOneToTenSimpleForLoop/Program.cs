@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace numbers1to10SimpleForLoop
+namespace NumbersOneToTenSimpleForLoop
 {
     class Program
     {

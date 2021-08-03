@@ -2,7 +2,7 @@
 
 namespace CalculateArea
 {
-    class perimeterandarea
+    class Program
     {
         static void Main(string[] args)
         {
@@ -13,7 +13,6 @@ namespace CalculateArea
             int perimeter = 2 * (sideA + sideB);
             Console.WriteLine(area);
             Console.WriteLine(perimeter);
-
         }
     }
 }

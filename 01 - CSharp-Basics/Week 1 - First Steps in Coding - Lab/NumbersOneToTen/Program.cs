@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace uprajnenie
+namespace NumbersOneToTen
 {
-    class numbers1to10
+    class Program
     {
         static void Main(string[] args)
         {

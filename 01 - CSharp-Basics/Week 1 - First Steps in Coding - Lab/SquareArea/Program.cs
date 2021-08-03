@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace squareArea
+namespace SquareArea
 {
     class Program
     {
