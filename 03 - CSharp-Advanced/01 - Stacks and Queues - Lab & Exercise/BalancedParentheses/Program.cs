@@ -3,12 +3,6 @@ using System.Collections.Generic;
 
 namespace BalancedParentheses
 {
-    // {[()]}        YES
-    // {{[[(())]]}}  YES
-    // {[(])}        NO
-    // {([]]}        NO
-    // [({}))        NO
-
     class StartUp
     {
         static void Main(string[] args)
@@ -25,7 +19,7 @@ namespace BalancedParentheses
                 }
                 else if (item == ')' || item == '}' || item == ']')
                 {
-                    string both = parentheses.Pop().ToString() + item;
+                    string both = parentheses.Peek().ToString() + item;
 
                     if ((both != "[]") && (both != "{}") && (both != "()"))
                     {
@@ -35,6 +29,7 @@ namespace BalancedParentheses
                     else
                     {
                         balanced = true;
+                        parentheses.Pop();
                     }
                 }
             }

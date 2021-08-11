@@ -2,18 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace StacksAndQueues
+namespace ReverseStrings
 {
     class Program
     {
         static void Main(string[] args)
         {
-            // stacks
-
-            // 1. reverse strings
-            // I Love C#
-            // Stacks and Queues
-
             string input = Console.ReadLine();
             Stack<char> reversedStack = new Stack<char>();
 

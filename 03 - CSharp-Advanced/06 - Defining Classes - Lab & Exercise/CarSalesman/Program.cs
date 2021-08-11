@@ -11,12 +11,11 @@ namespace DefiningClasses
             int n = int.Parse(Console.ReadLine());
 
             List<Engine> engineList = new List<Engine>();
-            List<Car> carList = new List<Car>();
+            List<Car> cars = new List<Car>();
 
-            //"{model} {power} {displacement} {efficiency}"
             for (int i = 0; i < n; i++)
             {
-                string[] input = Console.ReadLine().Split();
+                string[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
                 string model = input[0];
                 string power = input[1];
@@ -26,12 +25,26 @@ namespace DefiningClasses
 
                 if (input.Length > 2)
                 {
-                    displacement = input[2];
+                    if (char.IsDigit(input[2][0]))
+                    {
+                        displacement = input[2];
+                    }
+                    else
+                    {
+                        efficiency = input[2];
+                    }
                 }
 
                 if (input.Length > 3)
                 {
-                    efficiency = input[3];
+                    if (char.IsDigit(input[3][0]))
+                    {
+                        displacement = input[3];
+                    }
+                    else
+                    {
+                        efficiency = input[3];
+                    }
                 }
 
                 Engine currEngine = new Engine(model, power, displacement, efficiency);
@@ -40,10 +53,9 @@ namespace DefiningClasses
 
             int m = int.Parse(Console.ReadLine());
 
-            //"{model} {engine} {weight} {color}"
             for (int i = 0; i < m; i++)
             {
-                string[] input = Console.ReadLine().Split();
+                string[] input = Console.ReadLine().Split(" ", StringSplitOptions.RemoveEmptyEntries);
 
                 string model = input[0];
                 string engine = input[1];
@@ -53,45 +65,37 @@ namespace DefiningClasses
 
                 if (input.Length > 2)
                 {
-                    weight = input[2];
+                    if (char.IsDigit(input[2][0]))
+                    {
+                        weight = input[2];
+                    }
+                    else
+                    {
+                        color = input[2];
+                    }
                 }
 
                 if (input.Length > 3)
                 {
-                    color = input[3];
+                    if (char.IsDigit(input[3][0]))
+                    {
+                        weight = input[3];
+                    }
+                    else
+                    {
+                        color = input[3];
+                    }
                 }
 
-                Engine engineForThisCar = engineList.FirstOrDefault(e => e.Model == engine);
-                Car currCar = new Car(model, engineForThisCar, weight, color);
-                carList.Add(currCar);
+                Engine engineForCar = engineList.FirstOrDefault(e => e.Model == engine);
+                Car currentCar = new Car(model, engineForCar, weight, color);
+                cars.Add(currentCar);
             }
 
-            foreach (var car in carList)
+            foreach (var car in cars)
             {
-                Console.WriteLine($"{car.Model}:");
-                Console.WriteLine($"  {car.Engine.Model}:");
-                Console.WriteLine($"    Power: {car.Engine.Power}");
-                Console.WriteLine($"    Displacement: {car.Engine.Displacement}");
-                Console.WriteLine($"    Efficiency: {car.Engine.Efficiency}");
-                Console.WriteLine($"  Weight: {car.Weight}");
-                Console.WriteLine($"  Color: {car.Color}");
-
-                //{CarModel}:
-                //  {EngineModel}:
-                //      Power: { EnginePower}
-                //      Displacement: { EngineDisplacement}
-                //      Efficiency: { EngineEfficiency}
-                //  Weight: { CarWeight}
-                //  Color: { CarColor}
+                Console.WriteLine(car);
             }
-
-            //2
-            //V8-101 220 50
-            //V4-33 140 28 B
-            //3
-            //FordFocus V4-33 1300 Silver
-            //FordMustang V8-101
-            //VolkswagenGolf V4-33 Orange
         }
     }
 }

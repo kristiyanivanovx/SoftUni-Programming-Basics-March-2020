@@ -14,7 +14,7 @@ namespace DefiningClasses
 
         public string Efficiency { get; set; }
 
-        public Engine(string model, string power, string displacement = "n/a", string efficiency = "n/a")
+        public Engine(string model, string power, string displacement, string efficiency)
         {
             this.Model = model;
             this.Power = power;

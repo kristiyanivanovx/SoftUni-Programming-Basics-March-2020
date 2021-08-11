@@ -3,16 +3,12 @@ using System.Collections.Generic;
 
 namespace ContinentsCountriesCities
 {
-    // dictionaries
-
     class Program
     {
         static void Main(string[] args)
         {
             int length = int.Parse(Console.ReadLine());
-
-            Dictionary<string, Dictionary<string, List<string>>> map =
-                new Dictionary<string, Dictionary<string, List<string>>>();
+            Dictionary<string, Dictionary<string, List<string>>> map = new Dictionary<string, Dictionary<string, List<string>>>();
 
             for (int i = 0; i < length; i++)
             {
@@ -49,6 +45,7 @@ namespace ContinentsCountriesCities
                         {
                             Console.Write(", ");
                         }
+
                         Console.Write($"{country.Value[i]}");
                     }
 

@@ -25,15 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-ActionPoint", "Exe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-CustomMinFunction", "Exercise-CustomMinFunction\Exercise-CustomMinFunction.csproj", "{4B405023-0AB3-4868-A69E-00BE5B29510A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom Comparator", "Custom Comparator\Custom Comparator.csproj", "{EC3D3DBC-816E-4FCA-8D7F-AB09A5778F7F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomComparator", "Custom Comparator\CustomComparator.csproj", "{EC3D3DBC-816E-4FCA-8D7F-AB09A5778F7F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListOfPredicates", "ListOfPredicates\ListOfPredicates.csproj", "{7ED296AD-E209-496E-85AF-CF2B2510DEAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ListOfPredicates", "ListOfPredicates\ListOfPredicates.csproj", "{7ED296AD-E209-496E-85AF-CF2B2510DEAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-AppliedArithmetics", "Exercise-AppliedArithmetics\Exercise-AppliedArithmetics.csproj", "{B6026A62-020D-4687-830B-5AC492DCE01E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-AppliedArithmetics", "Exercise-AppliedArithmetics\Exercise-AppliedArithmetics.csproj", "{B6026A62-020D-4687-830B-5AC492DCE01E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-ReverseAndExclude", "Exercise-ReverseAndExclude\Exercise-ReverseAndExclude.csproj", "{DDA48B65-31A6-4BD0-9682-E024937401B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-ReverseAndExclude", "Exercise-ReverseAndExclude\Exercise-ReverseAndExclude.csproj", "{DDA48B65-31A6-4BD0-9682-E024937401B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-PredicateForNames", "Exercise-PredicateForNames\Exercise-PredicateForNames.csproj", "{AD64D746-7B48-43D2-85B0-16C73B99D4D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise-PredicateForNames", "Exercise-PredicateForNames\Exercise-PredicateForNames.csproj", "{AD64D746-7B48-43D2-85B0-16C73B99D4D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-KnightsOfHonor", "Exercise-KnightsOfHonor\Exercise-KnightsOfHonor.csproj", "{B0EC6FD2-ECAC-4465-8169-770985824710}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise-TriFunction", "Exercise-TriFunction\Exercise-TriFunction.csproj", "{34B39BDB-496D-4C4C-B825-A90CD09F7445}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -105,6 +109,14 @@ Global
 		{AD64D746-7B48-43D2-85B0-16C73B99D4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AD64D746-7B48-43D2-85B0-16C73B99D4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AD64D746-7B48-43D2-85B0-16C73B99D4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B0EC6FD2-ECAC-4465-8169-770985824710}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B0EC6FD2-ECAC-4465-8169-770985824710}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B0EC6FD2-ECAC-4465-8169-770985824710}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B0EC6FD2-ECAC-4465-8169-770985824710}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34B39BDB-496D-4C4C-B825-A90CD09F7445}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34B39BDB-496D-4C4C-B825-A90CD09F7445}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34B39BDB-496D-4C4C-B825-A90CD09F7445}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34B39BDB-496D-4C4C-B825-A90CD09F7445}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

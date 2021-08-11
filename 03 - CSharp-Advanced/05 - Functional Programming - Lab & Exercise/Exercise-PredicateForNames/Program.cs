@@ -8,30 +8,17 @@ namespace Exercise_PredicateForNames
     {
         static void Main(string[] args)
         {
-            //4
-            //Kurnelia Qnaki Geo Muk Ivan
-
-            //Geo
-            //Muk
-            //Ivan
-
-            //4
-            //Karaman Asen Kiril Yordan
-
-            //Asen
-
             int length = int.Parse(Console.ReadLine());
-
-            List<string> names = Console.ReadLine().Split().ToList();
-
-            Predicate<string> predicate = (name) => name.Length <= 4;
+            Predicate<string> predicate = (name) => name.Length <= length;
+            
+            List<string> names = Console.ReadLine()
+                .Split()
+                .Where(x => predicate(x))
+                .ToList();
 
             foreach (string name in names)
             {
-                if (predicate(name))
-                {
-                    Console.WriteLine(name);
-                }
+                Console.WriteLine(name);
             }
         }
     }

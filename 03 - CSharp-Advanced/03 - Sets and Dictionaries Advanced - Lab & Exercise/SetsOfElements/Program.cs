@@ -6,40 +6,22 @@ namespace SetsOfElements
 {
     class Program
     {
-        //4 3
-        //1
-        //3
-        //5
-        //7
-        //3
-        //4
-        //5
-
-        // 3 5
-
-        //2 2
-        //1
-        //3
-        //1
-        //5
-
-        //1
         static void Main(string[] args)
         {
-            int[] nm = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
             HashSet<int> hashsetN = new HashSet<int>();
             HashSet<int> hashsetM = new HashSet<int>();
 
-            int n = nm[0];
-            int m = nm[1];
+            int valueN = input[0];
+            int valueM = input[1];
 
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i < valueN; i++)
             {
                 int inputN = int.Parse(Console.ReadLine());
                 hashsetN.Add(inputN);
             }
 
-            for (int j = 0; j < m; j++)
+            for (int j = 0; j < valueM; j++)
             {
                 int inputM = int.Parse(Console.ReadLine());
                 hashsetM.Add(inputM);

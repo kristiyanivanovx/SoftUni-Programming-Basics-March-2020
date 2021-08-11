@@ -5,22 +5,6 @@ namespace UniqueNames
 {
     class Program
     {
-        //8
-        //Ivan
-        //Pesho
-        //Ivan
-        //Stamat
-        //Pesho
-        //Alice
-        //Peter
-        //Pesho
-
-        //Ivan
-        //Pesho
-        //Stamat
-        //Alice
-        //Peter
-
         static void Main(string[] args)
         {
             int number = int.Parse(Console.ReadLine());

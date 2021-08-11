@@ -6,30 +6,14 @@ namespace Exercise_ActionPoint
     {
         static void Main(string[] args)
         {
-            string[] input = "Lucas Noah Tea".Split();
+            string[] input = Console.ReadLine().Split();
 
             Action<string[]> printInput = Print;
-            Print(input);
-
-            void Print(string[] input)
-            {
-                Console.WriteLine(string.Join(Environment.NewLine, input));
-            }
-
-            Console.WriteLine(Environment.NewLine + "-------------------------" + Environment.NewLine);
-
-            string[] inputTwo = "Eathan Lucas Noah StanleyRoyce".Split();
-
-            Action<string[]> printInputTwo = PrintTwo;
-            PrintTwo(inputTwo);
-
-            void PrintTwo(string[] inputTwo)
-            {
-                foreach (var word in inputTwo)
-                {
-                    Console.WriteLine("Sir " + word);
-                }
-            }
+            printInput(input);
+        }
+        static void Print(string[] input)
+        {
+            Console.WriteLine(string.Join(Environment.NewLine, input));
         }
     }
 }

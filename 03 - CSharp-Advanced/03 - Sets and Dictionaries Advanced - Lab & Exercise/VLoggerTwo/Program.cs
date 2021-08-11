@@ -8,13 +8,7 @@ namespace VLoggerTwo
     {
         static void Main(string[] args)
         {
-            Dictionary<string, Dictionary<string, SortedSet<string>>> app
-                = new Dictionary<string, Dictionary<string, SortedSet<string>>>();
-
-            //app.Add("user one", new Dictionary<string, SortedSet<string>>());
-            //app["user one"].Add("following", new SortedSet<string>());
-            //app["user one"].Add("followers", new SortedSet<string>());
-
+            Dictionary<string, Dictionary<string, SortedSet<string>>> app = new Dictionary<string, Dictionary<string, SortedSet<string>>>();
             string command = Console.ReadLine();
 
             while (command != "Statistics")
@@ -23,7 +17,6 @@ namespace VLoggerTwo
 
                 if (followedOrJoined == "joined")
                 {
-                    // "{vloggername}" joined The V-Logge
                     string vloggerName = command.Split()[0];
 
                     if (!app.ContainsKey(vloggerName))
@@ -35,7 +28,6 @@ namespace VLoggerTwo
                 }
                 else if (followedOrJoined == "followed")
                 {
-                    // "{vloggername} followed {vloggername}"
                     string vloggerFollower = command.Split()[0];
                     string vloggerFollowed = command.Split()[2];
 
@@ -51,7 +43,8 @@ namespace VLoggerTwo
                 command = Console.ReadLine();
             }
 
-            var sortedDataApp = app.OrderByDescending(kvp => kvp.Value["followers"].Count)
+            var sortedDataApp = app
+                .OrderByDescending(kvp => kvp.Value["followers"].Count)
                 .ThenBy(kvp => kvp.Value["following"].Count)
                 .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 

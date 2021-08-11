@@ -8,28 +8,19 @@ namespace BasicStackOperations
     {
         static void Main(string[] args)
         {
-            // exercise 1
             int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
-
-            int n = input[0];
-            int s = input[1];
-            int x = input[2];
-
             int[] integers = Console.ReadLine().Split().Select(int.Parse).ToArray();
-
             Stack<int> stack = new Stack<int>(integers);
 
-            //for (int i = 0; i < n; i++)
-            //{
-            //    stack.Push(integers[i]);
-            //}
+            int numbersToBePoped = input[1];
+            int elementToLookFor = input[2];
 
-            for (int j = 0; j < s; j++)
+            for (int j = 0; j < numbersToBePoped; j++)
             {
                 stack.Pop();
             }
 
-            if (stack.Contains(x))
+            if (stack.Contains(elementToLookFor))
             {
                 Console.WriteLine("true");
             }
@@ -38,6 +29,10 @@ namespace BasicStackOperations
                 if (stack.Count > 0)
                 {
                     Console.WriteLine(stack.Min());
+                }
+                else
+                {
+                    Console.WriteLine(stack.Count);
                 }
             }
         }

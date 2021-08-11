@@ -8,23 +8,6 @@ namespace StackSum
     {
         static void Main(string[] args)
         {
-            // stacks
-
-            //3 5 8 4 1 9
-            //add 19 32
-            //remove 10
-            //add 89 22
-            //remove 4
-            //remove 3
-            //end
-            //sum: 16
-
-            //1 2 3 4
-            //adD 5 6
-            //REmove 3
-            //end
-            //sum: 6
-
             int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
             Stack<int> stack = new Stack<int>(input);
 

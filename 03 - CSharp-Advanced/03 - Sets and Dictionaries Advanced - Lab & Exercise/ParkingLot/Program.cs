@@ -7,23 +7,6 @@ namespace ParkingLot
     {
         static void Main(string[] args)
         {
-            //IN, CA2844AA
-            //IN, CA1234TA
-            //OUT, CA2844AA
-            //IN, CA9999TT
-            //IN, CA2866HI
-            //OUT, CA1234TA
-            //IN, CA2844AA
-            //OUT, CA2866HI
-            //IN, CA9876HH
-            //IN, CA2822UU
-            //END
-
-            //CA9999TT
-            //CA2844AA
-            //CA9876HH
-            //CA2822UU
-
             string command = Console.ReadLine();
             HashSet<string> cars = new HashSet<string>();
 

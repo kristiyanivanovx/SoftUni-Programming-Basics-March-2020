@@ -14,20 +14,17 @@ namespace GenericSwapMethodStrings
             for (int i = 0; i < n; i++)
             {
                 int element = int.Parse(Console.ReadLine());
-
-                //Box<string> newBox = new Box<string>(element);
-                Box<int> newBox = new Box<int>(element);
-                swapList.Add(newBox);
+                Box<int> box = new Box<int>(element);
+                swapList.Add(box);
             }
 
             int[] providedIndexes = Console.ReadLine().Split().Select(int.Parse).ToArray();
-            SwapMethod<int>(swapList, providedIndexes[0], providedIndexes[1]);
+            SwapMethod(swapList, providedIndexes[0], providedIndexes[1]);
 
             foreach (var element in swapList)
             {
-                var elName = element.GetType().Name;
-                Console.WriteLine($"System.Int32: {element.Value}");
-                //Console.WriteLine($"System.String: {element.Value}");
+                string name = element.GetType().Name;
+                Console.WriteLine($"{name}: {element.Value}");
             }
         }
 
@@ -35,7 +32,6 @@ namespace GenericSwapMethodStrings
         {
             T tempFirst = list[firstIndex].Value;
             T tempSecond = list[secondIndex].Value;
-            
             list[firstIndex] = new Box<T>(tempSecond);
             list[secondIndex] = new Box<T>(tempFirst);
         }

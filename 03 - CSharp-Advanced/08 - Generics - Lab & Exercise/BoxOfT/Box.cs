@@ -17,12 +17,12 @@ namespace BoxOfT
 
         public void Add(T element)
         {
-            BaseStack.Push(element);
+            this.BaseStack.Push(element);
         }
 
         public T Remove()
         {
-            return BaseStack.Pop();
+            return this.BaseStack.Pop();
         }
     }
 }

@@ -3,43 +3,37 @@ using System.Collections.Generic;
 
 namespace ProductShop
 {
-    // dictionaries
-
     class Program
     {
         static void Main(string[] args)
         {
+            SortedDictionary<string, Dictionary<string, double>> productShops = new SortedDictionary<string, Dictionary<string, double>>();
             string input = Console.ReadLine();
-            string[] actual;
-
-            SortedDictionary<string, Dictionary<string, double>> productShop =
-                new SortedDictionary<string, Dictionary<string, double>>();
 
             while (input.ToLower() != "revision")
             {
-                actual = input.Split(", ");
+                string[] actual = input.Split(", ");
 
                 string shop = actual[0];
                 string product = actual[1];
-                double price = double.Parse(actual[2], 
-                    System.Globalization.CultureInfo.InvariantCulture);
+                double price = double.Parse(actual[2]);
 
-                if (!productShop.ContainsKey(shop))
+                if (!productShops.ContainsKey(shop))
                 {
-                    productShop.Add(shop, new Dictionary<string, double>());
+                    productShops.Add(shop, new Dictionary<string, double>());
                 }
 
-                if (!productShop[shop].ContainsKey(product))
+                if (!productShops[shop].ContainsKey(product))
                 {
-                    productShop[shop].Add(product, price);
+                    productShops[shop].Add(product, price);
                 }
 
                 input = Console.ReadLine();
             }
 
-            foreach (var shop in productShop)
+            foreach (var shop in productShops)
             {
-                Console.WriteLine($"{shop.Key} -> ");
+                Console.WriteLine($"{shop.Key}->");
 
                 foreach (var product in shop.Value)
                 {

@@ -7,15 +7,16 @@ namespace SuperMarket
     {
         static void Main(string[] args)
         {
+            int counter = 0;
             string input = Console.ReadLine();
             Queue<string> market = new Queue<string>();
-            int counter = 0;
 
-            while (input.ToLower() != "end")
+            while (!input.ToLower().Contains("end"))
             {
-                if (input.ToLower() == "paid")
+                if (input.ToLower().Contains("paid"))
                 {
-                    for (int j = 0; j <= market.Count; j++)
+                    int marketCount = market.Count;
+                    for (int i = 0; i <= marketCount; i++)
                     {
                         if (market.Count > 0)
                         {
@@ -23,8 +24,6 @@ namespace SuperMarket
                             counter -= 1;
                         }
                     }
-
-                    counter -= 1;
                 }
                 else
                 {
@@ -38,33 +37,5 @@ namespace SuperMarket
             Console.WriteLine(counter + " people remaining.");
 
         }
-
-        /**
-        - input --
-        Amelia
-        Thomas
-        Elias
-        End
-
-        - output --
-        3 people remaining.
-
-        - input --
-        Liam
-        Noah
-        James
-        Paid
-        Oliver
-        Lucas
-        Logan
-        Tiana
-        End
-
-        - output --
-        Liam
-        Noah
-        James
-        4 people remaining.
-        **/
     }
 }

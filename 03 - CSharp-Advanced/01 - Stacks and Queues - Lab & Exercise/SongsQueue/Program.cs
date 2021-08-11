@@ -9,9 +9,7 @@ namespace SongsQueue
         static void Main(string[] args)
         {
             string[] inputSongs = Console.ReadLine().Split(", ").ToArray();
-
             Queue<string> songs = new Queue<string>(inputSongs);
-
             List<string> toBePrinted = new List<string>();
 
             while (songs.Any())
@@ -24,7 +22,6 @@ namespace SongsQueue
                 }
                 else if (command.Contains("Add"))
                 {
-                    // Get everything else after 4th position 
                     string song = command.Substring(4);
 
                     if (songs.Contains(song))

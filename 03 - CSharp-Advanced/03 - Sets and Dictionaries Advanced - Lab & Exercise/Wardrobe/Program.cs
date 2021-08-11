@@ -9,11 +9,7 @@ namespace Wardrobe
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-
-            Dictionary<string, Dictionary<string, int>> wardrobe
-                = new Dictionary<string, Dictionary<string, int>>();
-
-            //"{color} -> {item1},{item2},{item3}…"
+            Dictionary<string, Dictionary<string, int>> wardrobe = new Dictionary<string, Dictionary<string, int>>();
 
             for (int i = 0; i < n; i++)
             {
@@ -45,14 +41,12 @@ namespace Wardrobe
             string colorTBS = toBeSearched[0];
             string clothTypeTBS = toBeSearched[1];
 
-            // Console.WriteLine(colorTBS + clothTypeTBS);
             foreach (var item in wardrobe)
             {
                 Console.WriteLine(item.Key + " clothes:");
 
                 foreach (var i in item.Value)
                 {
-                    // blue dress
                     Console.Write("* " + i.Key + " - " + i.Value);
 
                     if (item.Key == colorTBS && i.Key == clothTypeTBS)

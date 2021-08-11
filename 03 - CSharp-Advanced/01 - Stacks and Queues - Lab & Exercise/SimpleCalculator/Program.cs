@@ -7,32 +7,26 @@ namespace SimpleCalculator
     {
         static void Main(string[] args)
         {
-            // stacks
-            
-            //Input                 Output
-            //2 + 5 + 10 - 2 - 1    14
-            //2 - 2 + 5             5
+            string[] input = Console.ReadLine().Split();
+            Stack<string> calculator = new Stack<string>(new Stack<string>(input));
 
-            string[] expression = Console.ReadLine().Split();
-            Stack<string> calculatorStack = new Stack<string>(new Stack<string>(expression));
-
-            while (calculatorStack.Count > 1)
+            while (calculator.Count > 1)
             {
-                int first = int.Parse(calculatorStack.Pop());
-                string operatorSign = calculatorStack.Pop();
-                int second = int.Parse(calculatorStack.Pop());
+                int firstDigit = int.Parse(calculator.Pop());
+                string operatorSign = calculator.Pop();
+                int secondDigit = int.Parse(calculator.Pop());
 
                 if (operatorSign == "+")
                 {
-                    calculatorStack.Push((first + second).ToString());
+                    calculator.Push((firstDigit + secondDigit).ToString());
                 }
                 else if (operatorSign == "-")
                 {
-                    calculatorStack.Push((first - second).ToString());
+                    calculator.Push((firstDigit - secondDigit).ToString());
                 }
             }
 
-            Console.WriteLine(calculatorStack.Pop());
+            Console.WriteLine(calculator.Pop());
         }
     }
 }

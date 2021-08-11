@@ -12,7 +12,8 @@
 			this.Age = 1;
 		}
 
-		public Person(int age) : this("No name", age)
+		public Person(int age) 
+			: this("No name", age)
 		{
 			this.Age = age;
 		}

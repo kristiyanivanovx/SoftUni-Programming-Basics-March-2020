@@ -12,26 +12,9 @@ namespace FilterByAge
 
     class Program
     {
-        // exe 5
-
-        //5
-        //Lucas, 20
-        //Tomas, 18
-        //Mia, 29
-        //Noah, 31
-        //Simo, 16
-        //older
-        //20
-        //name age
-
-        //Lucas - 20
-        //Mia - 29
-        //Noah - 31
-
         static void Main(string[] args)
         {
             int n = int.Parse(Console.ReadLine());
-
             Person[] people = new Person[n];
 
             for (int i = 0; i < n; i++)
@@ -47,7 +30,6 @@ namespace FilterByAge
             int filterAge = int.Parse(Console.ReadLine());
 
             Func<Person, bool> condition = GetAgeCondition(filter, filterAge);
-
             Action<Person> formatter = GetFormatter(Console.ReadLine());
 
             PrintPeople(people, condition, formatter);

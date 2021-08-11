@@ -8,21 +8,13 @@ namespace BasicQueueOperations
     {
         static void Main(string[] args)
         {
-            // exercise 2
             int[] input = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            int[] integers = Console.ReadLine().Split().Select(int.Parse).ToArray();
+            Queue<int> queue = new Queue<int>(integers);
 
             int n = input[0];
             int s = input[1];
             int x = input[2];
-
-            int[] integers = Console.ReadLine().Split().Select(int.Parse).ToArray();
-
-            Queue<int> queue = new Queue<int>(integers);
-
-            //for (int i = 0; i < n; i++)
-            //{
-            //    queue.Enqueue(integers[i]);
-            //}
 
             for (int j = 0; j < s; j++)
             {

@@ -8,23 +8,6 @@ namespace EvenTimes
     {
         static void Main(string[] args)
         {
-            //3
-            //2
-            //-1
-            //2
-
-            //2
-
-            //5
-            //1
-            //2
-            //3
-            //1
-            //5
-
-            //1
-
-            // <element, times faced>
             int elementsCount = int.Parse(Console.ReadLine());
             Dictionary<int, int> elements = new Dictionary<int, int>();
 

@@ -5,20 +5,6 @@ namespace PeriodicTable
 {
     class Program
     {
-        //4
-        //Ce O
-        //Mo O Ce
-        //Ee
-        //Mo
-
-        //Ce Ee Mo O
-
-        //3
-        //Ge Ch O Ne
-        //Nb Mo Tc
-        //O Ne
-
-        //Ch Ge Mo Nb Ne O Tc
         static void Main(string[] args)
         {
             int elementsCount = int.Parse(Console.ReadLine());

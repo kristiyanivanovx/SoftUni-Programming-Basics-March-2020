@@ -11,7 +11,6 @@ namespace WordCount
         {
             string[] lines = File.ReadAllLines("text.txt");
             string[] wordsWanted = File.ReadAllLines("words.txt");
-            //string expectedResultPath = Path.Combine
 
             Dictionary<string, int> wordsCounts = new Dictionary<string, int>();
 
@@ -39,9 +38,10 @@ namespace WordCount
                 .OrderByDescending(kvp => kvp.Value)
                 .ToDictionary(kvp => kvp.Key, kvp => kvp.Value);
 
-            foreach (var line in sortedWords)
+            foreach (var sortedLine in sortedWords)
             {
-                Console.WriteLine($"{line.Key} - {line.Value}");
+                Console.WriteLine($"{sortedLine.Key} - {sortedLine.Value}");
+                File.AppendAllText("actualResult.txt", $"{sortedLine.Key} - {sortedLine.Value}" + Environment.NewLine);
             }
         }
     }

@@ -9,23 +9,10 @@ namespace MaximumAndMinimumElement
     {
         static void Main(string[] args)
         {
-            //10
-            //2
-            //1 47
-            //1 66
-            //1 32
-            //4
-            //3
-            //1 25
-            //1 16
-            //1 8
-            //4
-
-            Stack<int> stack = new Stack<int>(); 
+            Stack<int> stack = new Stack<int>();
+            List<int> toBePrinted = new List<int>();
 
             int n = int.Parse(Console.ReadLine());
-
-            List<int> toBePrinted = new List<int>();
 
             for (int i = 0; i < n; i++)
             {

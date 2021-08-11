@@ -6,16 +6,16 @@ namespace GenericScale
     {
         static void Main(string[] args)
         {
-            int l = 1;
-            int r = 2;
+            int left = 1;
+            int right = 2;
 
-            EqualityScale<int> eqs = new EqualityScale<int>(l, r);
-            Console.WriteLine(eqs.AreEqual()); // false
+            EqualityScale<int> equalityScale = new EqualityScale<int>(left, right);
+            Console.WriteLine(equalityScale.AreEqual()); // false
 
-            int l2 = 5;
-            int r2 = 5;
+            int leftTwo = 5;
+            int rightTwo = 5;
 
-            EqualityScale<int> eqs2 = new EqualityScale<int>(l2, r2);
+            EqualityScale<int> eqs2 = new EqualityScale<int>(leftTwo, rightTwo);
             Console.WriteLine(eqs2.AreEqual()); // true
         }
     }

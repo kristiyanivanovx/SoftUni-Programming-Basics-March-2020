@@ -24,15 +24,10 @@ namespace SoftUniParking
 
         public override string ToString()
         {
-            //Make: Skoda
-            //Model: Fabia
-            //HorsePower: 65
-            //RegistrationNumber: CC1856BG
-
-            return  $"Make: {this.Make}" + Environment.NewLine +
-                    $"Model: {this.Model}" + Environment.NewLine + 
-                    $"HorsePower: {this.HorsePower}" + Environment.NewLine + 
-                    $"RegistrationNumber: {this.RegistrationNumber}";
+            return $"Make: {this.Make}" + Environment.NewLine +
+                   $"Model: {this.Model}" + Environment.NewLine + 
+                   $"HorsePower: {this.HorsePower}" + Environment.NewLine + 
+                   $"RegistrationNumber: {this.RegistrationNumber}";
         }
     }
 }

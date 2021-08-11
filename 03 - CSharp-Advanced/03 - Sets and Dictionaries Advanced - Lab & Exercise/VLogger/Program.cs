@@ -9,15 +9,12 @@ namespace VLogger
         {
             string command = Console.ReadLine();
 
-            // vlogger name, vlogger's followers
-            Dictionary<string, Dictionary<string, int>> vloggers =
-                new Dictionary<string, Dictionary<string, int>>();
+            Dictionary<string, Dictionary<string, int>> vloggers = new Dictionary<string, Dictionary<string, int>>();
 
             while (!command.Contains("Statistics"))
             {
                 if (command.Contains("joinеd The V-Logger"))
                 {
-                    // "{vloggername}" joined The V-Logge
                     string vloggerName = command.Split()[0];
                     if (!vloggers.ContainsKey(vloggerName))
                     {
@@ -27,7 +24,6 @@ namespace VLogger
 
                 if (command.Contains("followed"))
                 {
-                    // "{vloggername} followed {vloggername}"
                     string vloggerFollower = command.Split()[0];
                     string vloggerFollowed = command.Split()[2];
 

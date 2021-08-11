@@ -1,4 +1,4 @@
-﻿namespace DefineClassPerson
+﻿namespace OpinionPoll
 {
 	public class Person
 	{

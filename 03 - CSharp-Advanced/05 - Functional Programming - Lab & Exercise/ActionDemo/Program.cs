@@ -7,7 +7,7 @@ namespace ActionDemo
         static void Main(string[] args)
         {
             Action<string> printer = Print;
-            printer("Alo");
+            printer("test");
         }
 
         public static void Print(string message)

@@ -10,14 +10,14 @@ namespace RawData
 
         private string cargoType;
 
-        public double CargoWeight;
-
-        public string CargoType;
-
         public Cargo(double cargoWeight, string cargoType)
         {
             this.CargoWeight = cargoWeight;
             this.CargoType = cargoType;
         }
+
+        public double CargoWeight { get; set; }
+
+        public string CargoType { get; set; }
     }
 }

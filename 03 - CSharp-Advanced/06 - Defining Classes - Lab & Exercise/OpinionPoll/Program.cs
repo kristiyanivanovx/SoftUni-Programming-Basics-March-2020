@@ -1,5 +1,4 @@
-﻿using DefineClassPerson;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,20 +8,8 @@ namespace OpinionPoll
     {
         static void Main(string[] args)
         {
-            //5
-            //Nikolai 33
-            //Yordan 88
-            //Tosho 22
-            //Lyubo 44
-            //Stanislav 11
-
-            //Lyubo - 44
-            //Nikolai - 33
-            //Yordan - 88
-
-            int n = int.Parse(Console.ReadLine());
-
             List<Person> personList = new List<Person>();
+            int n = int.Parse(Console.ReadLine());
 
             for (int i = 0; i < n; i++)
             {
@@ -36,9 +23,10 @@ namespace OpinionPoll
                 personList.Add(person);
             }
 
-            personList = personList.Where(p => p.Age > 30)
-                                    .OrderBy(p => p.Name)
-                                    .ToList();
+            personList = personList
+                .Where(p => p.Age > 30)
+                .OrderBy(p => p.Name)
+                .ToList();
 
             foreach (Person person in personList)
             {

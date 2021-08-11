@@ -8,28 +8,14 @@ namespace Exercise_AppliedArithmetics
     {
         static void Main(string[] args)
         {
-            //1 2 3 4 5
-            //add
-            //add
-            //print
-            //end
-
-            //3 4 5 6 7
-
-            //5 10
-            //multiply
-            //subtract
-            //print
-            //end
-
-            //9 19
-
-            List<int> numbers = Console.ReadLine().Split().Select(int.Parse).ToList();
+            List<int> numbers = Console.ReadLine()
+                .Split(" ", StringSplitOptions.RemoveEmptyEntries)
+                .Select(int.Parse)
+                .ToList();
 
             string command = Console.ReadLine();
 
             Action<List<int>> printer = nums => Console.WriteLine(string.Join(" ", nums));
-            
             Func<int, int> arithmetics = (number) => number;
 
             while (command != "end")

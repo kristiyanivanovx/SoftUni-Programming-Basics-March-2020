@@ -15,7 +15,7 @@ namespace GenericSwapMethodStrings
 
         public override string ToString()
         {
-            return $"{this.Value.GetType()}: {this.Value}";
+            return $"{this.Value.GetType().Name}: {this.Value}";
         }
     }
 }

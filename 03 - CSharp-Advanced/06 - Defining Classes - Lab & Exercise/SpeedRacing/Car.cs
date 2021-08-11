@@ -6,11 +6,6 @@ namespace SpeedRacing
 {
     public class Car
     {
-        //private string model;
-        //private double fuelAmount;
-        //private double fuelConsumptionPerKilometer;
-        //private double travelledDistance;
-
         public string Model { get; set; }
 
         public double FuelAmount { get; set; }
@@ -24,7 +19,6 @@ namespace SpeedRacing
             this.Model = model;
             this.FuelAmount = fuelAmount;
             this.FuelConsumptionPerKilometer = fuelConsumptionPerKilometer;
-            //this.TravelledDistance = 0;
         }
 
         public bool Drive(double distanceTraveled) 
@@ -38,7 +32,6 @@ namespace SpeedRacing
 
             this.FuelAmount -= neededFuel;
             this.TravelledDistance += distanceTraveled;
-
             return true;
         } 
     }

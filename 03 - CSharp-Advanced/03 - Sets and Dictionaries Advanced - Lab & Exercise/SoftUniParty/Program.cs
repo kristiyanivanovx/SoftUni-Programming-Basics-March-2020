@@ -9,6 +9,7 @@ namespace SoftUniParty
         {
             string hashCode = Console.ReadLine();
             HashSet<string> people = new HashSet<string>();
+            HashSet<string> toBePrinted = new HashSet<string>();
 
             while (!hashCode.ToLower().Contains("end"))
             {
@@ -20,7 +21,7 @@ namespace SoftUniParty
                     {
                         if (hashCode.ToLower().Contains("end"))
                         {
-                            return;
+                            break;
                         }
 
                         people.Remove(hashCode);
@@ -32,49 +33,25 @@ namespace SoftUniParty
                     people.Add(hashCode);
                     hashCode = Console.ReadLine();
                 }
-
             }
 
             Console.WriteLine(people.Count);
-            foreach (var person in people)
+            foreach (string person in people)
+            {
+                if (char.IsDigit(person[0]))
+                {
+                    Console.WriteLine(person);
+                }
+                else
+                {
+                    toBePrinted.Add(person);
+                }
+            }
+
+            foreach (string person in toBePrinted)
             {
                 Console.WriteLine(person);
             }
         }
-
-//m8rfQBvl
-//fc1oZCE0
-//UgffRkOn
-//7ugX7bm0
-//9CQBGUeJ
-//2FQZT3uC
-//dziNz78I
-//mdSGyQCJ
-//LjcVpmDL
-//fPXNHpm1
-//HTTbwRmM
-//B5yTkMQi
-//8N0FThqG
-//xys2FYzn
-//MDzcM9ZK
-//PARTY
-//2FQZT3uC
-//dziNz78I
-//mdSGyQCJ
-//LjcVpmDL
-//fPXNHpm1
-//HTTbwRmM
-//B5yTkMQi
-//8N0FThqG
-//m8rfQBvl
-//fc1oZCE0
-//UgffRkOn
-//7ugX7bm0
-//9CQBGUeJ
-//END
-
-//2
-//xys2FYzn
-//MDzcM9ZK
     }
 }

@@ -29,11 +29,6 @@ namespace SoftUniParking
                 return "Car with that registration number, already exists!";
             }
 
-            //if (cars.Contains(car))
-            //{
-            //    return "Car with that registration number, already exists!";
-            //}
-
             if (this.cars.Count >= this.capacity)
             {
                 return "Parking is full!";
@@ -57,11 +52,6 @@ namespace SoftUniParking
         public Car GetCar(string registrationNumber)
         {
             return cars.FirstOrDefault(c => c.RegistrationNumber == registrationNumber);
-
-            //if (cars.Any(c => c.RegistrationNumber == registrationNumber))
-            //{
-            //    return cars.FirstOrDefault(c => c.RegistrationNumber == registrationNumber);
-            //}
         }
 
         public void RemoveSetOfRegistrationNumber(List<string> registrationNumbers)
@@ -71,11 +61,5 @@ namespace SoftUniParking
                 cars.RemoveAll(c => c.RegistrationNumber == regNum);
             }
         }
-
-        //public int Count()
-        //{
-        //    //return cars.Count;
-        //    return cars.Count();
-        //}
     }
 }

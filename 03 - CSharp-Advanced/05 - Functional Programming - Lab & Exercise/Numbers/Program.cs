@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Numbers
@@ -7,9 +8,14 @@ namespace Numbers
     {
         static void Main(string[] args)
         {
-            int[] array = new int[] { 3, 5, 7, 9, 1, 2, 4, 6, 8 };
-            array = array.OrderBy(x => x).ToArray();
-            Console.WriteLine(string.Join(" ", array));
+            List<int> numbers = Console.ReadLine()
+                .Split(", ")
+                .Select(int.Parse)
+                .Where(x => x % 2 == 0)
+                .OrderBy(x => x)
+                .ToList();
+
+            Console.WriteLine(string.Join(", ", numbers));
         }
     }
 }

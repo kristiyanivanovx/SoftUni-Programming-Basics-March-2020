@@ -8,21 +8,20 @@ namespace TrafficJam
         static void Main(string[] args)
         {
             int numberOfPassingCars = int.Parse(Console.ReadLine());
-
             string command = Console.ReadLine();
-            Queue<string> cars = new Queue<string>();
 
+            Queue<string> cars = new Queue<string>();
             int count = 0;
 
-            while (command.ToLower() != "end")
+            while (!command.ToLower().Contains("end"))
             {
-                if (command.ToLower() == "green")
+                if (command.ToLower().Contains("green"))
                 {
                     for (int i = 0; i < numberOfPassingCars; i++)
                     {
                         if (cars.Count > 0)
                         {
-                            Console.WriteLine(cars.Dequeue() + " Passed!");
+                            Console.WriteLine(cars.Dequeue() + " passed!");
                             count += 1;
                         }
                     }
@@ -31,38 +30,11 @@ namespace TrafficJam
                 {
                     cars.Enqueue(command);
                 }
+
                 command = Console.ReadLine();
             }
 
             Console.WriteLine($"{count} cars passed the crossroads.");
         }
-
-        // -- input
-        //4
-        //Hummer H2
-        //Audi
-        //Lada
-        //Tesla
-        //Renault
-        //Trabant
-        //Mercedes
-        //MAN Truck
-        //green
-        //green
-        //Tesla
-        //Renault
-        //Trabant
-        //end
-
-        // -- output
-        //Hummer H2 passed!
-        //Audi passed!
-        //Lada passed!
-        //Tesla passed!
-        //Renault passed!
-        //Trabant passed!
-        //Mercedes passed!
-        //MAN Truck passed!
-        //8 cars passed the crossroads.
     }
 }

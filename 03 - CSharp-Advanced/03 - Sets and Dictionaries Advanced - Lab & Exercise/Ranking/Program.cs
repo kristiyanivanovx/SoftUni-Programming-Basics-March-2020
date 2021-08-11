@@ -8,23 +8,17 @@ namespace Ranking
     {
         static void Main(string[] args)
         {
-            // contest name | contest
-            Dictionary<string, string> availableContests =
-                new Dictionary<string, string>();
-
-            SortedDictionary<string, SortedDictionary<string, int>> students =
-                new SortedDictionary<string, SortedDictionary<string, int>>();
-
+            Dictionary<string, string> contests = new Dictionary<string, string>();
+            SortedDictionary<string, SortedDictionary<string, int>> students = new SortedDictionary<string, SortedDictionary<string, int>>();
             string input = Console.ReadLine();
 
             while (input != "end of contests")
             {
-                //"{contest}:{password for contest}"
                 string[] contestAndPassword = input.Split(":");
                 string contest = contestAndPassword[0];
                 string password = contestAndPassword[1];
 
-                availableContests.Add(contest, password);
+                contests.Add(contest, password);
                 input = Console.ReadLine();
             }
 
@@ -32,14 +26,13 @@ namespace Ranking
 
             while (input != "end of submissions")
             {
-                //"{contest}=>{password}=>{username}=>{points}
                 string[] information = input.Split("=>");
                 string contest = information[0];
                 string password = information[1];
                 string username = information[2];
                 int points = int.Parse(information[3]);
 
-                if (availableContests.ContainsKey(contest) && availableContests[contest] == password)
+                if (contests.ContainsKey(contest) && contests[contest] == password)
                 {
                     if (!students.ContainsKey(username))
                     {

@@ -7,29 +7,19 @@ namespace MatchingBrackets
     {
         static void Main(string[] args)
         {
-            // stacks
+            string input = Console.ReadLine();
+            Stack<int> indexes = new Stack<int>();
 
-            // input
-            // 1 + (2 - (2 + 3) * 4 / (3 + 1)) * 5
-
-            // output
-            // (2 + 3)
-            // (3 + 1)
-            // (2 - (2 + 3) * 4 / (3 + 1))
-
-            string expression = Console.ReadLine();
-            Stack<int> bracketsIndexes = new Stack<int>();
-
-            for (int i = 0; i < expression.Length; i++)
+            for (int i = 0; i < input.Length; i++)
             {
-                if (expression[i] == '(')
+                if (input[i] == '(')
                 {
-                    bracketsIndexes.Push(i);
+                    indexes.Push(i);
                 }
-                else if (expression[i] == ')')
+                else if (input[i] == ')')
                 {
-                    int startIndex = bracketsIndexes.Pop();
-                    Console.WriteLine(expression.Substring(startIndex, i - startIndex + 1));
+                    int startIndex = indexes.Pop();
+                    Console.WriteLine(input.Substring(startIndex, i - startIndex + 1));
                 }
             }
         }
