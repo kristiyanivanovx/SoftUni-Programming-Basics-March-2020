@@ -6,9 +6,6 @@ namespace WildFarm.Models.Animals.Mammals
 {
     public class Dog : Mammal
     {
-        //Dog Doncho 500 Street 
-        //[{AnimalName}, {AnimalWeight}, {AnimalLivingRegion}, {FoodEaten}]"
-
         public Dog(string name, double weight, string region)
             : base(name, weight, region)
         {

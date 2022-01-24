@@ -17,6 +17,7 @@ namespace WildFarm.Core
     {
         public void Run() 
         {
+            List<Animal> animals = new List<Animal>();
             string[] animalArguments = Console.ReadLine().Split();
             string type = animalArguments[0];
 
@@ -40,11 +41,12 @@ namespace WildFarm.Core
                     Console.WriteLine(ioe.Message);
                 }
 
-                Console.WriteLine(animal.ToString());
-
+                animals.Add(animal);
                 animalArguments = Console.ReadLine().Split();
                 type = animalArguments[0];
             }
+
+            animals.ForEach(x => Console.WriteLine(x.ToString()));
         }
 
         private static Animal CreateAnimal(string[] animalArguments, string type, string name, double weight)

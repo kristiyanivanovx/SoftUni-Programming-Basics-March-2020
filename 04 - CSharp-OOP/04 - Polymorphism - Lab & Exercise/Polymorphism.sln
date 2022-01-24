@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vehicles", "Polymorphism\Vehicles.csproj", "{72C90133-111E-4D47-BBE9-418614FE86EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicles", "Vehicles\Vehicles.csproj", "{72C90133-111E-4D47-BBE9-418614FE86EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WildFarm", "WildFarm\WildFarm.csproj", "{32889043-5D5B-4552-AA62-DE4F2A3C756D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WildFarm", "WildFarm\WildFarm.csproj", "{32889043-5D5B-4552-AA62-DE4F2A3C756D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raiding", "Raiding\Raiding.csproj", "{B628DBB6-2A61-4DB1-97CA-A86EFE42C601}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{32889043-5D5B-4552-AA62-DE4F2A3C756D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32889043-5D5B-4552-AA62-DE4F2A3C756D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32889043-5D5B-4552-AA62-DE4F2A3C756D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B628DBB6-2A61-4DB1-97CA-A86EFE42C601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B628DBB6-2A61-4DB1-97CA-A86EFE42C601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B628DBB6-2A61-4DB1-97CA-A86EFE42C601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B628DBB6-2A61-4DB1-97CA-A86EFE42C601}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

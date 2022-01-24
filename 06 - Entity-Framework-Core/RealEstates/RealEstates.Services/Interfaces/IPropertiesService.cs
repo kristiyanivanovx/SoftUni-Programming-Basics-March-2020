@@ -5,7 +5,8 @@ namespace RealEstates.Services.Interfaces
 {
     public interface IPropertiesService
     {
-        void Add(string district, int price, int floor,
+        void Add(
+            string district, int price, int floor,
             int maxFloor, int size, int yardSize,
             int year, string propertyType, string buildingType);
 
